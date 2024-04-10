@@ -1,7 +1,7 @@
 # 𝑃𝑁 𝑅𝑒𝑙𝑎𝑏𝑒𝑙𝑖𝑛𝑔 data preparation
 
 The **𝑃𝑁 𝑅𝑒𝑙𝑎𝑏𝑒𝑙𝑖𝑛𝑔 data preparation** Java project for a) label selection, and b) harvesting articles with concept occurrence. 
-This project is an extension of the projects *MeSH_Extension<sup>1</sup>* and *MeSH_retrospective_dataset<sup>2</sup>*.
+This project is an extension of the projects *[MeSH_Extension](https://github.com/tasosnent/MeSH_Extension)* and *[MeSH_retrospective_dataset](https://github.com/ThomasChatzopoulos/MeSH_retrospective_dataset)*.
 
 ## Requirements
 java 1.8.0_91
@@ -38,11 +38,9 @@ This project produces two files as listed below, where XXXX stands for nowYear (
 * A CSV file named **filtering_XXXX_descriptors.csv** (e.g. filtering_2005_descriptors.csv) including all the Fine-Grained Label MeSH descriptors of the referenceYear (e.g. MeSH2020) that were available in the version of nowYear (e.g. 2005). They are annotated with related information (the parents in the MeSH hierarchy, the MeSH categories, etc)
 * A JSON file named **filtering_XXXX.json** (e.g. filtering_2005.json) with all articles a) having an abstract and b) being MeSH Completed in the period [oldYearInitial, November of nowYear]. For each article this file provides a) the abstract ("abstractText") and MeSH labels ("Descriptor_names","Descriptor_UIs") from the Lucene index, and b) the weak labels for selected descriptors ("weakLabel"), based on Concept Occurrence of respective CUIs from SemMedDB. Note: December of nowYear is excluded because it is the month when MEDLINE/PubMed and MeSH are usually updated, hence some of the documents MeSH Completed in December of nowYear may follow the MeSH version of the next year (nowYear+1).
 
-## Reference
+## References
 
-[1] Nentidis, A., Krithara, A., Tsoumakas, G., & Paliouras, G. (2021). What is all this new MeSH about? Exploring the semantic provenance of new descriptors in the MeSH thesaurus. International Journal on Digital Libraries, July 2021, https://doi.org/10.1007/s00799-021-00304-z
-[2] Nentidis, A., Chatzopoulos, T., Krithara, A., Tsoumakas, G., & Paliouras, G. (2023). Large-scale investigation of weakly-supervised deep learning for the fine-grained semantic indexing of biomedical literature. Journal of Biomedical Informatics, Volume 146, October 2023, 104499, https://doi.org/10.1016/j.jbi.2023.104499
+* [1] Nentidis, A., Krithara, A., Tsoumakas, G., & Paliouras, G. (2021). What is all this new MeSH about? Exploring the semantic provenance of new descriptors in the MeSH thesaurus. International Journal on Digital Libraries, July 2021, https://doi.org/10.1007/s00799-021-00304-z
+* [2] Nentidis, A., Chatzopoulos, T., Krithara, A., Tsoumakas, G., & Paliouras, G. (2023). Large-scale investigation of weakly-supervised deep learning for the fine-grained semantic indexing of biomedical literature. Journal of Biomedical Informatics, Volume 146, October 2023, 104499, https://doi.org/10.1016/j.jbi.2023.104499
 
-<sup>1</sup> https://github.com/tasosnent/MeSH_Extension
-<sup>2</sup> https://github.com/ThomasChatzopoulos/MeSH_retrospective_dataset
 
