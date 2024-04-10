@@ -1,0 +1,16 @@
+commons-io-2.4.jar
+commons-lang3-3.4.jar
+bson-3.0.4-javadoc.jar					
+bson-3.0.4.jar							
+mongo-java-driver-3.0.4-javadoc.jar		
+mongodb-driver-3.0.4.jar				
+mongodb-driver-core-3.0.4-javadoc.jar	
+mongodb-driver-core-3.0.4.jar			
+json-simple-1.1.1.jar					
+lucene-analyzers-common-5.3.1.jar		
+lucene-core-5.3.1.jar					
+lucene-queryparser-5.3.1.jar			
+opencsv-5.0.jar							
+snakeyaml-1.18.jar						
+commons-text-1.9.jar					
+mysql-connector-java-5.1.44-bin.jar		
