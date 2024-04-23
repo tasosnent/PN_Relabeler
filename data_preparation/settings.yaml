@@ -1,4 +1,4 @@
-# The path for the folder where all reslts will be stored
+# The path for the folder where all results will be stored
 workingPath: '/**** Write here the path to the folder where you will save the files and the results  ****/'
 # The path to the flder with the XML files for all MeSH versions (both descXXXX.xml and suppXXXX.xml should be available)
 meshXmlPath: '/**** Write here the path to the folder where the MeSH files are stored ****/'
