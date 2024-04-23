@@ -1,0 +1,42 @@
+# Settings for Transformer_models: for DBM model development and evaluation
+
+# A string representing the specific experiment. This will be used as a prefix in some generated files and folders.
+project_name: 'f2005_FP_10'
+# The name of the original CSV file with with all SCL descriptors for a specifix PN Relabeling dataset (e.g. FP_SCL_selected.csv)
+detailsfgNL: 'FP_SCL_selected.csv'
+# The path for the folder of the PN Relabeling dataset. The trained model and all results for this dataset will be stored in this folder.
+datasetPath: .../f2005_FP_10
+# The path for the folder of the evaluation FGSI dataset. All the zero shot prediction results for this dataset will be stored in this folder.
+datasetPathZS: .../f2005_FN_5
+skip_model_training: false # A Flag. When true skip the training of a PN Relabering model on datasetPath, else train.
+skip_test_evaluation: false # A Flag. When true skip the evaluation of the PN Relabering model on the test split of datasetPath, else perform.
+skip_zs_evaluation: false # A Flag. When true skip the zero shot evaluation of a PN Relabering model on datasetPathZS, else perform.
+
+# Base model for fine-tuning
+modelName: 'microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract'
+batch_size: 8
+epochs: 5 # Number of training epochs. The BERT authors recommend between 2 and 4.
+learning_rate: 1e-5
+seed_vals: # Seed values for repeated experiments
+  - 0
+  - 27
+  - 42
+  - 61
+  - 80
+  - 97
+prediction_threshold: 0.5
+pos_weight: true # If true, use an array of weights to balance the classes/labels
+save_model: true # If true, save the final_model as a pickled file.
+epoch_to_use: 'best' # One of 'best', 'previous', 'both'
+  # If 'best' use the best model on validation.
+  # If 'previous' replace the best model on validation, with the one of the previous epoch.
+  # If 'both' use both models for evaluation.
+tokenization_example: false # whether to print an example of tokenization or not.
+wandb_key: '...' # The key for wandb library to report the progress of the experiment
+gpu_number: 0
+balance_ns: # A list of balance_n values to be considered for different experiments. e.g. a value of 10 stands for keeping about 10 negatives per positive instance for each label.
+  - 10
+# The files of the train and test datasets as developed with a retrospective approach. For PN Relabeler experiments leave these fields empty.
+testFileRaw: ''
+trainFileRaw: ''
+data_folder: ''
