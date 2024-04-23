@@ -1,7 +1,7 @@
 # 𝑃𝑁 𝑅𝑒𝑙𝑎𝑏𝑒𝑙𝑖𝑛𝑔 data preparation
 
 The **𝑃𝑁 𝑅𝑒𝑙𝑎𝑏𝑒𝑙𝑖𝑛𝑔 data preparation** Java project for a) label selection, and b) harvesting articles with concept occurrence. 
-This project is an extension of the projects *[MeSH_Extension](https://github.com/tasosnent/MeSH_Extension)* and *[MeSH_retrospective_dataset](https://github.com/ThomasChatzopoulos/MeSH_retrospective_dataset)*.
+This implementation builds upon the open-source projects *[MeSH_Extension](https://github.com/tasosnent/MeSH_Extension)* and *[MeSH_retrospective_dataset](https://github.com/ThomasChatzopoulos/MeSH_retrospective_dataset)*.
 
 ## Requirements
 java 1.8.0_91
@@ -27,7 +27,6 @@ This project has been developed in NetBeans IDE 8.1
 * umls: A local instance of UMLS in MySQL including: dbname, dbuser, and dbpass
 * umlsMeshVersion: The MeSH version in UMLS used for mapping MeSH concepts to CUIs
 * smdb: A local instance of SemMedDB in MySQL including: dbname, dbuser, and dbpass
-
 
 ### Run
 The main method is in DatasetCreator.java and considers no arguments. 
