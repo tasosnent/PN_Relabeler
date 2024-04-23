@@ -8,6 +8,6 @@ Use as described in steps 1, 2, and 4 in the [**Relabeler**](../) project.
 ## Requirements
 These scripts are written in Python 3.9.7.
 
-Libraries and versions required are listed in requirements.txt.
+Libraries and versions required are listed in [requirements.txt](../requirements.txt).
 
 This project has been developed in PyCharm 2021.1.2 (Community Edition).
