@@ -13,4 +13,7 @@ This repository includes the implementation of all parts of the **PN Relabeler**
     - A [**Deep learning modeling**](/Relabeler/modeling) part that performs:
         - The development of a *PN Relabeler* model on the *𝑃𝑁 𝑅𝑒𝑙𝑎𝑏𝑒𝑙𝑖𝑛𝑔 dataset*.
         - The application of the *PN Relabeler* model to relabel predictions for the FGSI task.
-   
+
+## Reference
+
+* [1] Nentidis, A., Krithara, A., Tsoumakas, G., & Paliouras, G. (2024). Zero-shot relabeling of weak labels for fine-grained semantic indexing of biomedical literature. 27th European Conference on Artificial Intelligence (ECAI-2024), Oct 2024
